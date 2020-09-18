@@ -70,5 +70,5 @@ Copyright (c) [2020] [Makers of Project S.A.F.E.]
 - Ritvick V. Pandey - (https://github.com/Ritvick-me)
 - Devangi Purkayastha - (https://github.com/devangi2000)
 - Sarthak Purohit - (https://github.com/sarthakpurohit)
-- Shubham Saxena - (https://github.com/shubham1810)
-[Back To The Top](#read-me-template)
+- Shubham Saxena - (https://github.com/shubhamsaxena1810)
+
