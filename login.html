@@ -29,9 +29,38 @@
                 <a class="nav-item nav-link" href="">Sign Up</a>
             </div>
         </div>
+        <div id="responsive-nav" class="container-fluid rvp-responsive-nav">
+            <div id="responsive-nav-content" class="rvp-responsive-nav-body">
+                <div class="text-center">
+                    <ul class="rvp-responsive-navlist text-center">
+                        <a href="index.html#about" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">About</li>
+                        </a>
+                        <a href="index.html#team" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Team</li>
+                        </a>
+                        <a href="index.html#virtues" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Virtues</li>
+                        </a>
+                        <a href="" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Login</li>
+                        </a>
+                        <a href="" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Sign Up</li>
+                        </a>
+                        <a onclick="removeResponsiveNavbar()">
+                            <li class="text-center close-text">close</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="rvp-close" onclick="removeResponsiveNavbar()">
+                    &#10005;
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <div class="container-fluid rvp-form-choose">
+    <div id="forms" class="container-fluid rvp-form-choose">
         <div id="login-form" class="container rvp-login-margin">
             <div class="row justify-content-center align-items-center rvp-login-form">
                 <div class="col col-12 col-lg-6 rvp-form-box">
@@ -45,18 +74,39 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center align-items-center d-none d-md-flex rvp-form-outer">
+        <div id="signup-form" class="row justify-content-center align-items-center d-none d-md-flex rvp-form-outer">
             <div class="col col-12 col-md-5 text-right rvp-col-button">
-                <button class="rvp-form-choice-buttons rvp-button-right" onclick="openSignIn()">Sign Up</button>
+                <button class="rvp-form-choice-buttons rvp-button-right" onclick="openLogin()">Log In</button>
             </div>
             <div class="col col-12 col-md-5 text-left rvp-col-button">
-                <button class="rvp-form-choice-buttons rvp-button-left" onclick="openLogin()">Log In</button>
+                <button class="rvp-form-choice-buttons rvp-button-left" onclick="openSignup()">Sign Up</button>
             </div>
         </div>
-        <div class="row justify-content-center align-items-center d-md-none rvp-form-outer">
+        <div id="signup-mobile-form" class="row justify-content-center align-items-center d-md-none rvp-form-outer">
             <div class="col col-12 col-md-5 text-center rvp-col-button">
-                <button class="rvp-form-choice-buttons" onclick="openSignIn()">Sign Up</button>
                 <button class="rvp-form-choice-buttons" onclick="openLogin()">Log In</button>
+                <button class="rvp-form-choice-buttons" onclick="openSignup()">Sign Up</button>
+            </div>
+        </div>
+        <div class="container-fluid rvp-signup-form">
+            <div class="row justify-content-center align-items-center rvp-signup">
+                <div class="col col-12 col-lg-6 rvp-form-box rvp-margin-bottom">
+                    <h2>Sign In</h2>
+                    <form class="text-center" action="" method="">
+                        <input class="rvp-input" type="text" name="fname" placeholder="Full name">
+                        <input class="rvp-input" type="Mobile" name="text" placeholder="Mobile number">
+                        <input class="rvp-input" type="MobileAlt" name="text" placeholder="Alternate mobile number">
+                        <input class="rvp-input" type="text" name="address" placeholder="Address">
+                        <input class="rvp-input" type="text" name="parent" placeholder="S/O or W/O">
+                        <input class="rvp-input" type="text" name="company" placeholder="Car company">
+                        <input class="rvp-input" type="text" name="model" placeholder="Car model">
+                        <input class="rvp-input" type="text" name="nplate" placeholder="Car number plate">
+                        <input class="rvp-input" type="email" name="email" placeholder="Email">
+                        <input class="rvp-input" type="password" name="password" placeholder="Password">
+                        <button class="rvp-submit">Sign In</button>
+                        <button class="rvp-submit" type="button" onclick="closeSignup()">Back</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

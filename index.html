@@ -23,9 +23,38 @@
       <div class="navbar-nav rvp-nav-items ml-auto">
         <a class="nav-item nav-link" href="#about">About</a>
         <a class="nav-item nav-link" href="#team">Team</a>
-        <a class="nav-item nav-link" href="">Virtues</a>
+        <a class="nav-item nav-link" href="#virtues">Virtues</a>
         <a class="nav-item nav-link" href="login.html">Login</a>
         <a class="nav-item nav-link" href="login.html">Sign Up</a>
+      </div>
+    </div>
+    <div id="responsive-nav" class="container-fluid rvp-responsive-nav">
+      <div id="responsive-nav-content" class="rvp-responsive-nav-body">
+        <div class="text-center">
+          <ul class="rvp-responsive-navlist text-center">
+            <a href="#about" onclick="removeResponsiveNavbar()">
+              <li class="text-center">About</li>
+            </a>
+            <a href="#team" onclick="removeResponsiveNavbar()">
+              <li class="text-center">Team</li>
+            </a>
+            <a href="#virtues" onclick="removeResponsiveNavbar()">
+              <li class="text-center">Virtues</li>
+            </a>
+            <a href="login.html" onclick="removeResponsiveNavbar()">
+              <li class="text-center">Login</li>
+            </a>
+            <a href="login.html" onclick="removeResponsiveNavbar()">
+              <li class="text-center">Sign Up</li>
+            </a>
+            <a onclick="removeResponsiveNavbar()">
+              <li class="text-center close-text">close</li>
+            </a>
+          </ul>
+        </div>
+        <div class="rvp-close" onclick="removeResponsiveNavbar()">
+          &#10005;
+        </div>
       </div>
     </div>
   </nav>

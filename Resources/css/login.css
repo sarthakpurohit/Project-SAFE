@@ -7,7 +7,6 @@
 
 #login-form {
     transition-duration: 0.5s;
-    /* margin: 0; */
 }
 
 .rvp-form-box {
@@ -16,7 +15,6 @@
     border-top-color: var(--green);
     border-width: 1px;
     border-radius: 5px;
-    /* box-shadow: 0 0 40px 10px var(--green); */
 }
 
 .rvp-login-form {
@@ -88,6 +86,7 @@
     margin: 0 0;
     padding: 0 16px;
     background-color: var(--green);
+    transition-duration: 0.5s;
 }
 
 .rvp-col-button {
@@ -134,7 +133,53 @@
 
 /* ---------------------------------------------------- Sign up Form --------------------------------------------- */
 
+.rvp-signup-form {
+    padding: 0px 0px;
+    height: 100vh;
+    overflow: hidden;
+}
 
+.rvp-signup {
+    padding: 48px 8px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.rvp-signup .col {
+    margin: 40px 0px;
+}
+
+.rvp-signup h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: var(--font1);
+    color: var(--green);
+    margin: 16px;
+}
+
+.rvp-margin-bottom {
+    margin-bottom: 500px;
+}
+
+@media(max-width: 768px) {
+    .rvp-input {
+        font-size: 1em;
+        padding: 8px 16px;
+        margin: 8px 0;
+    }
+
+    .rvp-submit {
+        font-size: 1em;
+        margin: 24px auto;
+        margin-top: 16px;
+        text-transform: uppercase;
+        font-family: var(--font4);
+        letter-spacing: 0.1em;
+    }
+}
 
 /* ---------------------------------------------------- Sign up Form --------------------------------------------- */
 
@@ -152,6 +197,11 @@
 .rvp-login-margin {
     margin-top: -100vh;
     transition-duration: 0.5s;
+}
+
+.rvp-overflow {
+    height: 100%;
+    overflow: auto;
 }
 
 @media (max-width: 992px) {
