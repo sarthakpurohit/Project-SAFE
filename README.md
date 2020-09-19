@@ -10,7 +10,7 @@
 
 - [License](#license)
 - [Contributors](#contributors)
-- [Detials](#details)
+- [Details](#details)
 
 ### Description
 
@@ -39,7 +39,7 @@
 
 
 
-#### Details
+## Details
 
 1. Classifier-:
     The CNN classifier for classifying Emergency Vehicles and Non-Emergency Vehicles was trained using transfer-learning on pre-trined resnet-50.
