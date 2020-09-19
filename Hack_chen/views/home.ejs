@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+
+<head>
+  <title>Signal Alert For Emergency</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="Resources/images/drone.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/global.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top rvp-nav-bg">
+        <a class="navbar-brand rvp-brand" href="/">SAFE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="responsiveNavbar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav rvp-nav-items ml-auto">
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link" href="#team">Team</a>
+                <a class="nav-item nav-link" href="#virtues">Virtues</a>
+                <a class="nav-item nav-link" href="/login">Login</a>
+                <a class="nav-item nav-link" href="#">Sign Up</a>
+            </div>
+        </div>
+        <div id="responsive-nav" class="container-fluid rvp-responsive-nav">
+            <div id="responsive-nav-content" class="rvp-responsive-nav-body">
+                <div class="text-center">
+                    <ul class="rvp-responsive-navlist text-center">
+                        <a href="/#about" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">About</li>
+                        </a>
+                        <a href="/#team" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Team</li>
+                        </a>
+                        <a href="/#virtues" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Virtues</li>
+                        </a>
+                        <a href="/login" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Login</li>
+                        </a>
+                        <a href="" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Sign Up</li>
+                        </a>
+                        <a onclick="removeResponsiveNavbar()">
+                            <li class="text-center close-text">close</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="rvp-close" onclick="removeResponsiveNavbar()">
+                    &#10005;
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  
+  <div class="rvp-hero">
+    <div class="rvp-hero-title">
+      <h1 class="text-center rvp-h1-animation">SAFE</h1>
+      <h4 class="text-center">Signal Alert For Emergency</h4>
+    </div>
+  </div>
+
+  <div id="about"></div>
+
+  <div class="container-fluid rvp-what-we-do">
+    <div class="row justify-content-center align-items-center">
+      <div class="col col-12 col-lg-6 text-center d-lg-none">
+        <img src="images/drone.png" alt="drone" class="rvp-side-image">
+      </div>
+      <div class="col col-12 col-lg-6">
+        <h3 class="rvp-h3">What we do!</h3>
+        <p class="rvp-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum.</p>
+      </div>
+      <div class="col col-12 col-lg-6 text-center d-none d-lg-block">
+        <img src="images/drone.png" alt="drone" class="rvp-side-image">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid rvp-how-we-do-it">
+    <div class="row justify-content-center align-items-center">
+      <div class="col col-12 col-lg-6 text-center">
+        <img src="images/maps.png" alt="maps" class="rvp-side-image">
+      </div>
+      <div class="col col-12 col-lg-6">
+        <h3 class="rvp-h3">How we do it!</h3>
+        <p class="rvp-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid rvp-who-we-are" id="team">
+    <div class="row justify-content-center align-items-center rvp-who-we-are-row">
+      <div class="col col-12 col-lg-6 text-center d-lg-none">
+        <img src="images/team.svg" alt="drone" class="rvp-side-image">
+      </div>
+      <div class="col col-12 col-lg-6">
+        <h3 class="rvp-h3">Who we are!</h3>
+        <p class="rvp-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum.</p>
+      </div>
+      <div class="col col-12 col-lg-6 text-center d-none d-lg-block">
+        <img src="images/team.svg" alt="drone" class="rvp-side-image">
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center rvp-who-row">
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="rvp-card">
+            <div class="rvp-person text-center">
+              <img src="images/ritvick.jpg" alt="ritvick">
+            </div>
+            <h4 class="text-center rvp-name">Ritvick V. Pandey</h4>
+            <h5 class="text-center rvp-name">RA181100301698</h5>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut
+              labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="rvp-card">
+            <div class="rvp-person text-center">
+              <img src="images/Shubham.jpg" alt="ritvick">
+            </div>
+            <h4 class="text-center rvp-name">Shubham Saxena</h4>
+            <h5 class="text-center rvp-name">RA181100301691</h5>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut
+              labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="rvp-card">
+            <div class="rvp-person text-center">
+              <img src="images/Devangi.jpg" alt="ritvick">
+            </div>
+            <h4 class="text-center rvp-name">Devangi Purkayastha</h4>
+            <h5 class="text-center rvp-name">RA181100301689</h5>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut
+              labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="rvp-card">
+            <div class="rvp-person text-center">
+              <img src="images/ritvick.jpg" alt="ritvick">
+            </div>
+            <h4 class="text-center rvp-name">Ritvick V. Pandey</h4>
+            <h5 class="text-center rvp-name">RA181100301698</h5>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut
+              labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid rvp-why-is-it-worth" id="virtues">
+    <div class="row justify-content-center align-items-center">
+      <div class="col col-12 col-lg-6 d-lg-none">
+        <h3 class="rvp-h3">Why is it worth?</h3>
+        <p class="rvp-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="col col-12 col-lg-6">
+        <div class="rvp-outer-box">
+          <div class="rvp-inner-box box-set-1">
+            <div class="box-set-3 box-1">
+              <div>
+                <h4 class="rvp-virtue-head">Values</h4>
+                <p class="rvp-virtue-p">chola chola chola chola chola chola chola chola chola chola chola chola chola
+                  chola chola chola chola
+                  chola chola chola chola chola chola chola chola chola chola chola chola chola chola chola chola chola
+                  chola chola chola chola chola chola chola chola chola chola chola chola
+                </p>
+              </div>
+            </div>
+            <div class="box-set-4 box-2">
+              <div>
+                <h4 class="rvp-virtue-head">Goals</h4>
+                <p class="rvp-virtue-p">jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola
+                  jhola jhola jhola jhola
+                  jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola
+                  jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola jhola
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rvp-inner-box box-set-2">
+            <div class="box-set-3 box-3">
+              <div>
+                <h4 class="rvp-virtue-head">Virtues</h4>
+                <p class="rvp-virtue-p">lola lola lola lola lola lola lola lola lola lola lola lola lola lola lola lola
+                  lola lola lola lola
+                  lola lola lola lola lola lola lola lola lola lola lola lola lola lola lola lola lola lola lola lola
+                  lola
+                  lola lola lola lola lola lola lola lola lola lola lola lola lola lola
+                </p>
+              </div>
+            </div>
+            <div class="box-set-4 box-4">
+              <div>
+                <h4 class="rvp-virtue-head">Mission</h4>
+                <p class="rvp-virtue-p">bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola
+                  bhola bhola bhola bhola
+                  bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola
+                  bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola bhola
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-lg-6 d-none d-lg-block">
+        <h3 class="rvp-h3">Why is it worth?</h3>
+        <p class="rvp-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center rvp-footer">
+      <div class="col col-12 col-lg-4">
+        <h2 class="rvp-foot-logo text-center">SAFE</h2>
+      </div>
+      <div class="col col-12 col-lg-4">
+        <ul class="rvp-foot-list text-center">
+          <a href="#about">
+            <li>About</li>
+          </a>
+          <a href="#team">
+            <li>Team</li>
+          </a>
+          <a href="#virtues">
+            <li>Virtues</li>
+          </a>
+          <a href="">
+            <li>Login</li>
+          </a>
+          <a href="">
+            <li>Sign up</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col col-12 col-lg-4">
+        <p class="text-center rvp-copyright">Sketched and encoded with a spirit to learn
+          by ©Team Hackos 2020</p>
+      </div>
+    </div>
+  </div>
+<li><a href="/adminlog">Admin LogIn!</a></li>
+	
+<li><a href="/logout">Logout!</a></li>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="/index.js"></script>
+</body>
+
+</HTML>
+
