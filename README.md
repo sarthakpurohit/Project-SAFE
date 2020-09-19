@@ -10,6 +10,7 @@
 
 - [License](#license)
 - [Contributors](#contributors)
+- [Detials](#details)
 
 ### Description
 
@@ -37,6 +38,20 @@
 #### Installation
 
 
+
+#### Details
+
+1. Classifier-:
+    The CNN classifier for classifying Emergency Vehicles and Non-Emergency Vehicles was trained using transfer-learning on pre-trined resnet-50.
+    (a). Why resnet?
+        - Although there were other choice like VGG and Alexnet. Resnet takes comparatively less memory space. Inference time of resnet is low. Also, resnet takes lesser epoch             to attain desirable accuracy.
+    (b). Why resnet-50?
+        - While other options like resnet-34, resnet-101 were available. There is a trade-off between accuracy v/s (training time & infference time). So, resnet-50 appeared to             be a good choice for our task.
+    
+    Finally after training, the model attained almost 94% accuracy.
+    For inference, the given image is first converted to 224\*224 shape, normalized before feeding to model.
+
+    
 
 #### API Reference
 
