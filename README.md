@@ -5,12 +5,13 @@
 
 ### Table of Contents
 
-## Description
 - [Description](#description)
 - [How To Use](#how-to-use)
 
 - [License](#license)
 - [Contributors](#contributors)
+
+### Description
 
 > During emergencies, when stranded in a traffic jam, what's the best possible help one can provide to those in dire need of help? There comes the situation where people can not be extricated from problematic situations as the emergency vehicles can not reach there on time.
 
@@ -28,8 +29,6 @@
 - CSS
 - NodeJS
 - Flask
-
-[Back To The Top](#read-me-template)
 
 ---
 
