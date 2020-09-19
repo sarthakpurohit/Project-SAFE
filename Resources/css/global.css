@@ -74,6 +74,7 @@ a:hover {
 }
 
 @media(max-width: 480px) {
+
     .rvp-h3 {
         font-size: 1.7em;
     }
