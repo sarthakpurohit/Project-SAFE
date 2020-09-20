@@ -54,21 +54,46 @@
 ---
 
 
->### License
-
->MIT License
-
-> Copyright (c) [2020] 
-
-> [Makers of Project S.A.F.E.]
-
-
----
-
 > ### Contributors
 
 >- Ritvick V. Pandey - (https://github.com/Ritvick-me)
 >- Devangi Purkayastha - (https://github.com/devangi2000)
 >- Sarthak Purohit - (https://github.com/sarthakpurohit)
 >- Shubham Saxena - (https://github.com/shubhamsaxena1810)
+
+---
+
+> ## Contribute 👨‍👨‍👧‍👦
+> Thanks for taking the time to contribute!
+
+> The following is a set of guidelines for contributing to Project S.A.F.E. Use your best judgement and feel free to propose changes to this document in a pull request.
+
+> If you have any questions, open an issue.
+
+---
+
+> ### Issue 
+
+> Ensure the bug was not already reported by searching on GitHub under issues. If you're unable to find an open issue addressing the bug, open a new issue.
+
+> Write detailed information. Detailed information is very helpful to understand an issue.
+
+---
+
+> ### Pull Requests
+
+> Pull Requests are always welcome.
+
+---
+
+> ## License
+
+> MIT © HACKOS
+
+> This project is licensed under the MIT License 
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+<p align="center">
+	Made with :heart: by <a href="https://github.com/devangi2000">HACKOS</a>
+</p>
 
