@@ -20,7 +20,7 @@
 ---
 
 ## Details
-> ### Classifier-: 
+> ### Classifier: 
 >   The CNN classifier for classifying Emergency Vehicles and Non-Emergency Vehicles was trained using transfer-learning on pre-trined resnet50. Finally after training, the model attained almost 94% accuracy. Saved model can be found at (https://drive.google.com/drive/folders/1gyJQaO7AUsfyEBrIJ7jd8PQxlCDBEEFp?usp=sharing)
 >    For inference, the given image is first converted to 224 * 224 shape and normalized before feeding to model.
 
@@ -29,33 +29,43 @@
 >     (b) Why resnet-50?
 >        - While other options like resnet-34, resnet-101 were available. There is a trade-off between model size and (training time & inference time). So, resnet-50 appeared to be a good choice for our task.
 
+> ### Number Plate Extraction:
+> OpenCV and PyTesseract have been used for this purpose.
+
+> The images are fed to the model which converts it to gray scale, blurs it out and eventually, edges are highlighted. Contours are drawn to extract the highlighted features.
+
+> A bounding rectangle is then drawn around the highlighted number plates, subsequently being passed on to another png file.
+
+> Using pytesseract, the text on the number plate is extracted and sent to the database.
 
 
-#### Technologies
+> ### Technologies
 
-- PyTorch
-- OpenCV
-- HTML
-- CSS
-- NodeJS
-- Flask
-
----
-
-
-## License
-
-MIT License
-
-Copyright (c) [2020] [Makers of Project S.A.F.E.]
-
+>- PyTorch
+>- OpenCV
+>- HTML
+>- CSS
+>- NodeJS
+>- Flask
 
 ---
 
-## Contributors
 
-- Ritvick V. Pandey - (https://github.com/Ritvick-me)
-- Devangi Purkayastha - (https://github.com/devangi2000)
-- Sarthak Purohit - (https://github.com/sarthakpurohit)
-- Shubham Saxena - (https://github.com/shubhamsaxena1810)
+>### License
+
+>MIT License
+
+> Copyright (c) [2020] 
+
+> [Makers of Project S.A.F.E.]
+
+
+---
+
+> ### Contributors
+
+>- Ritvick V. Pandey - (https://github.com/Ritvick-me)
+>- Devangi Purkayastha - (https://github.com/devangi2000)
+>- Sarthak Purohit - (https://github.com/sarthakpurohit)
+>- Shubham Saxena - (https://github.com/shubhamsaxena1810)
 
