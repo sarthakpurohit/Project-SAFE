@@ -38,6 +38,9 @@
 
 > Using pytesseract, the text on the number plate is extracted and sent to the database.
 
+> ### Website:
+
+>The website is made using the basic technologies like HTML and CSS being used for the front end section along with JavaScript for certain animations . This site contains a home page which provides the basic knowledge about us and what our project aims at. A login/signup page where the users are supposed to fill their personal and their vehicle's details correctly. Then these details are sent to the backend section of our website where the user collection stores all the data of the user and presents it back when the user logs in into his/her account. The admin page, for now, (as the deployment is not complete) just shows the images of vehicles that are to be classified into emergency/non emergency type.
 
 > ### Technologies
 
