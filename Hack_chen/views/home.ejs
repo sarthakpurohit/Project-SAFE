@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+
+<head>
+  <title>Signal Alert For Emergency</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/drone.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/global.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top rvp-nav-bg">
+        <a class="navbar-brand rvp-brand" href="/">SAFE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="responsiveNavbar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav rvp-nav-items ml-auto">
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link" href="#team">Team</a>
+                <a class="nav-item nav-link" href="#virtues">Virtues</a>
+                <a class="nav-item nav-link" href="/login">Login</a>
+                <a class="nav-item nav-link" href="/adminlog">Admin</a>
+            </div>
+        </div>
+        <div id="responsive-nav" class="container-fluid rvp-responsive-nav">
+            <div id="responsive-nav-content" class="rvp-responsive-nav-body">
+                <div class="text-center">
+                    <ul class="rvp-responsive-navlist text-center">
+                        <a href="/#about" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">About</li>
+                        </a>
+                        <a href="/#team" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Team</li>
+                        </a>
+                        <a href="/#virtues" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Virtues</li>
+                        </a>
+                        <a href="/login" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Login</li>
+                        </a>
+                        <a href="/adminlog" onclick="removeResponsiveNavbar()">
+                            <li class="text-center">Admin</li>
+                        </a>
+                        <a onclick="removeResponsiveNavbar()">
+                            <li class="text-center close-text">close</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="rvp-close" onclick="removeResponsiveNavbar()">
+                    &#10005;
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  
+  <div class="rvp-hero">
+    <div class="rvp-hero-title">
+      <h1 class="text-center rvp-h1-animation">SAFE</h1>
+      <h4 class="text-center">Signal Alert For Emergency</h4>
+    </div>
+  </div>
+
+  <div id="about"></div>
+
+  <div class="container-fluid rvp-what-we-do">
+    <div class="row justify-content-center align-items-center">
+      <div class="col col-12 col-lg-6 text-center d-lg-none">
+        <img src="images/drone.png" alt="drone" class="rvp-side-image">
+      </div>
+      <div class="col col-12 col-lg-6">
+        <h3 class="rvp-h3">What we do!</h3>
+        <p class="rvp-p">On May 24, 2019 a short circuit caused the fire in a coaching complex which took the life of about 15
+          children, and left many injured. The Surat Fire incident. Those lives may have been saved, were it not for the
+          traffic that obstructed the proper help from reaching in time. What we plan to do is create a system which
+          warns the users of a sudden disaster and suggests them to take an alternate route. Thus preventing a traffic
+          jam around the location and aiding in faster rescue and disaster Mitigation response. At the same time, it
+          protects the user from getting trapped in such a calamity.</p>
+      </div>
+      <div class="col col-12 col-lg-6 text-center d-none d-lg-block">
+        <img src="images/drone.png" alt="drone" class="rvp-side-image">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid rvp-how-we-do-it">
+    <div class="row justify-content-center align-items-center">
+      <div class="col col-12 col-lg-6 text-center">
+        <img src="images/maps.png" alt="maps" class="rvp-side-image">
+      </div>
+      <div class="col col-12 col-lg-6">
+        <h3 class="rvp-h3">How we do it!</h3>
+        <p class="rvp-p">It all starts with the user registration on our portal. The user fills a basic form and provides us with his
+          contact details. If something unfortunate occurs, the traffic cameras around this locality focus on taking
+          snaps of the number plate of the vehicles. These snaps are then used to distinguish emergency and non
+          emergency vehicles. The numbers from the civilian vehicle number plates are extracted. If we spot any of our
+          beloved clients heading towards such a danger we immediately send them a message, or a mail to help them
+          re-route their vehicles.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid rvp-who-we-are" id="team">
+    <div class="row justify-content-center align-items-center rvp-who-we-are-row">
+      <div class="col col-12 col-lg-6 text-center d-lg-none">
+        <img src="images/team.svg" alt="drone" class="rvp-side-image">
+      </div>
+      <div class="col col-12 col-lg-6">
+        <h3 class="rvp-h3">Who we are!</h3>
+        <p class="rvp-p">This initiative to save lives is brought together by four beating hearts which beat just like our logo at the
+          top does in every seven seconds. Souls which have aspirations too big to be held inside their minds, and
+          visions bigger than their sight may permit. But nonetheless, we intend to shoot for the stars, and perhaps
+          land on the moon. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum.</p>
+      </div>
+      <div class="col col-12 col-lg-6 text-center d-none d-lg-block">
+        <img src="images/team.svg" alt="drone" class="rvp-side-image">
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center rvp-who-row">
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="rvp-card">
+            <div class="rvp-person text-center">
+              <img src="images/ritvick.jpg" alt="ritvick">
+            </div>
+            <h4 class="text-center rvp-name">Ritvick V. Pandey</h4>
+            <h5 class="text-center rvp-name">RA181100301698</h5>
+            <p class="text-justify">A website speaks volumes about the ideals of an organization. Which is why, it should be
+              brief, crisp and to the point to make an impact. It should have a design easy to understood and appeals to
+              the audience. It creates the first impression, and first impressions are often the last. Therefore I
+              tried to build a UI/UX, which isn't just concise and ultra fast, but also soothing to the eyes.
+            </p>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="rvp-card">
+            <div class="rvp-person text-center">
+              <img src="images/Shubham.jpg" alt="ritvick">
+            </div>
+            <h4 class="text-center rvp-name">Shubham Saxena</h4>
+            <h5 class="text-center rvp-name">RA181100301691</h5>
+            <p class="text-justify">The backend of the website must be strong and capable enough to able to carry the required amount of data, it should provide the user with their proper details and information.Even the frontend must be properly connected to the backend. So the try was to make a backend MongoDB which containes the information of the user and have created the frontend to display the user details of the User.
+            </p>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="rvp-card">
+            <div class="rvp-person text-center">
+              <img src="images/Devangi.jpg" alt="ritvick">
+            </div>
+            <h4 class="text-center rvp-name">Devangi Purkayastha</h4>
+            <h5 class="text-center rvp-name">RA1811003010689</h5>
+            <p class="text-justify">Implemented text extraction using Pytesseract after converting the images to grayscale, blurring them, highlighting edges as well as drawing contours around the most dominant features, making it easier to localise the region of interest, i.e., the number plate by drawing bounding rectangles around them.
+            </p>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="rvp-card">
+            <div class="rvp-person text-center">
+              <img src="images/Sarthak.png" alt="ritvick">
+            </div>
+            <h4 class="text-center rvp-name">Sarthak Purohit</h4>
+            <h5 class="text-center rvp-name">RA1811028010052</h5>
+            <p class="text-justify">Implemented the model which determined whether the vehicle in the image provided by the cameras is an emergency vehicle or not. Trained using transfer-learning on pre-trined resnet50. For inference, the given image is first converted to 224 * 224 shape and normalized before feeding to model.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid rvp-why-is-it-worth" id="virtues">
+    <div class="row justify-content-center align-items-center">
+      <div class="col col-12 col-lg-6 d-lg-none">
+        <h3 class="rvp-h3">Why is it worth?</h3>
+        <p class="rvp-p">We believe our small incentives today will create great revolutions tomorrow. So this is our first step
+          towards a future where each se second reduced is equivalent to a life saved. Thus there are some core values
+          that our organizaton follows to provide our loved ones, the care they deserve.
+        </p>
+      </div>
+      <div class="col col-12 col-lg-6">
+        <div class="rvp-outer-box">
+          <div class="rvp-inner-box box-set-1">
+            <div class="box-set-3 box-1">
+              <div>
+                <h4 class="rvp-virtue-head">Moto</h4>
+                <p class="rvp-virtue-p">"Save time, save lives."
+                </p>
+              </div>
+            </div>
+            <div class="box-set-4 box-2">
+              <div>
+                <h4 class="rvp-virtue-head">Goals</h4>
+                <p class="rvp-virtue-p">Protection under surveillance. We intend to build a world which can face any challenge thrown at it
+                  with optimum efficiency, with the power of a simple roadways surveillance system.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rvp-inner-box box-set-2">
+            <div class="box-set-3 box-3">
+              <div>
+                <h4 class="rvp-virtue-head">Virtues</h4>
+                <p class="rvp-virtue-p">Ambition, Empathy, Responsibility
+                </p>
+              </div>
+            </div>
+            <div class="box-set-4 box-4">
+              <div>
+                <h4 class="rvp-virtue-head">Mission</h4>
+                <p class="rvp-virtue-p">Certain disasters cannot be predicted and no number of precautions can help us mitigate them, if we're
+                  too slow to react. Our mission is to create a platform which helps people find a way to decrease the
+                  response time and save more lives.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-lg-6 d-none d-lg-block">
+        <h3 class="rvp-h3">Why is it worth?</h3>
+        <p class="rvp-p">We believe our small incentives today will create great revolutions tomorrow. So this is our first step
+          towards a future where each se second reduced is equivalent to a life saved. Thus there are some core values
+          that our organizaton follows to provide our loved ones, the care they deserve.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center rvp-footer">
+      <div class="col col-12 col-lg-4">
+        <h2 class="rvp-foot-logo text-center">SAFE</h2>
+      </div>
+      <div class="col col-12 col-lg-4">
+        <ul class="rvp-foot-list text-center">
+          <a href="#about">
+            <li>About</li>
+          </a>
+          <a href="#team">
+            <li>Team</li>
+          </a>
+          <a href="#virtues">
+            <li>Virtues</li>
+          </a>
+          <a href="/login">
+            <li>Login</li>
+          </a>
+          <a href="/adminlog">
+            <li>Admin</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col col-12 col-lg-4">
+        <p class="text-center rvp-copyright">Sketched and encoded with a spirit to learn
+          by ©Team Hackos 2020</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="/index.js"></script>
+</body>
+
+</HTML>
+
