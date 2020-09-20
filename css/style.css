@@ -1,0 +1,731 @@
+/* -------------------------------- Navbar css --------------------------------------------------- */
+
+.rvp-nav-bg {
+    background-color: var(--grey) !important;
+}
+
+.rvp-brand {
+    color: var(--white) !important;
+    font-family: var(--font1);
+    letter-spacing: 0.4em;
+}
+
+.rvp-nav-items a {
+    color: var(--white) !important;
+    font-size: 1.2em;
+    margin-right: 1em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 999 !important;
+}
+
+.rvp-nav-items a:nth-child(6) {
+    margin-right: 0em;
+}
+
+.rvp-nav-items a:before {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 1.3em;
+    left: 0px;
+    width: 0em;
+    height: 0.5em;
+    transition-duration: 0.3s;
+    background-color: var(--green);
+}
+
+.rvp-nav-items a:hover:before {
+    width: 1em;
+    transition-duration: 0.3s;
+}
+
+.rvp-nav-items a:after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 0.55em;
+    right: 0px;
+    width: 0em;
+    height: 0.5em;
+    transition-duration: 0.3s;
+    background-color: var(--green);
+}
+
+.rvp-nav-items a:hover:after {
+    width: 1em;
+    transition-duration: 0.3s;
+}
+
+.rvp-responsive-nav {
+    position: fixed;
+    top: 23px;
+    right: 38px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: var(--white);
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+
+.rvp-responsive-nav-enable {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    transition-duration: 0.3s;
+}
+
+.rvp-responsive-nav-body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition-duration: 0.2s;
+}
+
+.rvp-responsive-navlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rvp-responsive-navlist a {
+    color: var(--green) !important;
+    font-family: var(--font1);
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.rvp-responsive-navlist li {
+    position: relative;
+    text-transform: uppercase;
+    max-width: max-content;
+    margin: 8px 0px !important;
+}
+
+.rvp-responsive-navlist li::after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 0.35em;
+    right: 0px;
+    width: 0em;
+    height: 0.3em;
+    transition-duration: 0.3s;
+    background-color: var(--grey);
+}
+
+.rvp-responsive-navlist li:hover:after {
+    width: 1em;
+    transition-duration: 0.3s;
+}
+
+.rvp-responsive-navlist li::before {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 0.9em;
+    left: 0px;
+    width: 0em;
+    height: 0.3em;
+    transition-duration: 0.3s;
+    background-color: var(--grey);
+}
+
+.rvp-responsive-navlist li:hover:before {
+    width: 1em;
+    transition-duration: 0.3s;
+}
+
+.rvp-responsive-navlist a:nth-child(6) {
+    color: var(--grey) !important;
+}
+
+.close-text::after {
+    background-color: var(--green) !important;
+}
+
+.close-text::before {
+    background-color: var(--green) !important;
+}
+
+.rvp-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 999;
+    cursor: pointer;
+    color: var(--green) !important;
+}
+
+/* -------------------------------- Navbar css --------------------------------------------------- */
+
+/* -------------------------------- Hero css --------------------------------------------------- */
+
+.rvp-hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    background-color: var(--green);
+}
+
+.rvp-hero-title {
+    color: var(--white);
+    font-family: var(--font1);
+}
+
+.rvp-hero-title h1 {
+    font-size: 7em;
+    padding-left: 1em;
+    letter-spacing: 1em;
+    text-shadow: -0.05em 0.3em 30px var(--black);
+}
+
+.rvp-hero-title h4 {
+    margin-top: 16px;
+    font-family: var(--font4);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: -0.05em 0.5em 10px var(--black);
+}
+
+.rvp-h1-animation {
+    animation: blur-effect;
+    -moz-animation: blur-effect;
+    animation-duration: 7s;
+    -moz-animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+}
+
+@keyframes blur-effect {
+    0% {
+        filter: blur(20px);
+    }
+
+    5% {
+        filter: blur(0px);
+    }
+
+    92% {
+        filter: blur(0px);
+    }
+
+    96% {
+        filter: blur(20px);
+    }
+
+    97% {
+        filter: blur(0px);
+    }
+
+    99% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(20px);
+    }
+
+}
+
+@-moz-keyframes blur-effect {
+    0% {
+        filter: blur(20px);
+    }
+
+    5% {
+        filter: blur(0px);
+    }
+
+    92% {
+        filter: blur(0px);
+    }
+
+    96% {
+        filter: blur(20px);
+    }
+
+    97% {
+        filter: blur(0px);
+    }
+
+    99% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .rvp-hero {
+        margin-top: -50px;
+    }
+
+    .rvp-hero-title h1 {
+        font-size: 5em;
+        padding-left: 1em;
+        letter-spacing: 1em;
+    }
+
+    .rvp-hero-title h4 {
+        font-size: 1.3em;
+        letter-spacing: 0.1em;
+    }
+}
+
+@media (max-width: 628px) {
+    .rvp-hero-title h1 {
+        font-size: 3em;
+        padding-left: 1em;
+        letter-spacing: 1em;
+    }
+
+    .rvp-hero-title h4 {
+        margin-top: 16px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 376px) {
+    .rvp-hero-title h1 {
+        font-size: 2.5em;
+        padding-left: 1em;
+        letter-spacing: 1em;
+    }
+
+    .rvp-hero-title h4 {
+        margin-top: 16px;
+        font-size: 0.9em;
+        letter-spacing: 0.1em;
+    }
+}
+
+/* -------------------------------- Hero css --------------------------------------------------- */
+
+
+/* -------------------------------- What we do css --------------------------------------------------- */
+
+.rvp-what-we-do {
+    margin: 80px 0 !important;
+}
+
+.rvp-p {
+    margin: 16px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/* -------------------------------- What we do css --------------------------------------------------- */
+
+
+/* -------------------------------- How we do it css --------------------------------------------------- */
+
+.rvp-how-we-do-it {
+    padding: 80px 16px;
+    background-color: #fafafa;
+}
+
+.rvp-side-image {
+    max-width: 100%;
+    height: 300px;
+}
+
+/* -------------------------------- How we do it css --------------------------------------------------- */
+
+
+/* -------------------------------- Who we are css --------------------------------------------------- */
+
+.rvp-who-we-are {
+    padding: 80px 0px;
+}
+
+.rvp-who-we-are-row {
+    margin: 40px 0px;
+    margin-bottom: 80px;
+}
+
+.rvp-who-row {
+    padding: 0 16px;
+}
+
+.rvp-card {
+    border-style: solid;
+    border-color: #f1f1f1;
+    border-top-color: var(--green);
+    padding: 16px 32px;
+    margin: 80px 0;
+    margin-bottom: 16px;
+}
+
+.rvp-person {
+    margin: 24px;
+    margin-top: -96px;
+}
+
+.rvp-person img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.rvp-name {
+    color: var(--grey);
+}
+
+/* -------------------------------- Who we are css --------------------------------------------------- */
+
+/* -------------------------------- Why is it worth -------------------------------------------------- */
+
+.rvp-why-is-it-worth {
+    padding: 80px 16px !important;
+    background-color: #fafafa;
+}
+
+.rvp-outer-box {
+    margin: auto;
+    margin-top: 40px;
+    width: 310px;
+    height: 300px;
+    overflow: hidden;
+    padding: 0 0px;
+}
+
+.rvp-virtue-head {
+    color: var(--green);
+    font-family: var(--font4);
+}
+
+.rvp-virtue-p {
+    color: var(--grey);
+    font-family: var(--font2);
+}
+
+.rvp-inner-box {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    transition-duration: 0.5s;
+}
+
+.box-1,
+.box-3 {
+    z-index: 999;
+    background-color: #fafafa;
+    padding: 0px 16px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-2,
+.box-4 {
+    background-color: #fafafa;
+    padding: 0px 16px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-set-1 {
+    animation: scroll-top;
+    -moz-animation: scroll-top;
+    animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+}
+
+@keyframes scroll-top {
+    0% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: 0;
+    }
+
+    25% {
+        margin-top: -300px;
+    }
+
+    70% {
+        margin-top: -300px;
+    }
+
+    75% {
+        margin-top: 0%;
+    }
+
+    100% {
+        margin-top: 0%;
+    }
+
+}
+
+@-moz-keyframes scroll-top {
+    0% {
+        margin-top: 0%;
+    }
+
+    20% {
+        margin-top: 0%;
+    }
+
+    25% {
+        margin-top: -300px;
+    }
+
+    70% {
+        margin-top: -300px;
+    }
+
+    75% {
+        margin-top: 0%;
+    }
+
+    100% {
+        margin-top: 0%;
+    }
+}
+
+.box-set-3 {
+    animation: scroll-left;
+    -moz-animation: scroll-left;
+    animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        margin-left: 0%;
+    }
+
+    45% {
+        margin-left: 0%;
+    }
+
+    50% {
+        margin-left: -300px;
+    }
+
+    95% {
+        margin-left: -300px;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+
+}
+
+@-moz-keyframes scroll-left {
+    0% {
+        margin-left: 0%;
+    }
+
+    45% {
+        margin-left: 0%;
+    }
+
+    50% {
+        margin-left: -300px;
+    }
+
+    95% {
+        margin-left: -300px;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+.box-set-4 {
+    animation: scroll-right;
+    -moz-animation: scroll-right;
+    animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+}
+
+@keyframes scroll-right {
+    0% {
+        margin-left: -300px;
+    }
+
+    45% {
+        margin-left: -300px;
+    }
+
+    50% {
+        margin-left: 0px;
+    }
+
+    95% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -300px;
+    }
+
+}
+
+@-moz-keyframes scroll-right {
+    0% {
+        margin-left: -300px;
+    }
+
+    45% {
+        margin-left: -300px;
+    }
+
+    50% {
+        margin-left: 0px;
+    }
+
+    95% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -300px;
+    }
+}
+
+/* -------------------------------- Why is it worth -------------------------------------------------- */
+
+
+/* -------------------------------- Footer -------------------------------------------------- */
+
+.rvp-footer {
+    background-color: var(--green);
+    padding: 40px 16px;
+}
+
+.rvp-foot-logo {
+    font-family: var(--font1);
+    color: var(--white);
+    font-size: 4em;
+    letter-spacing: 0.5em;
+    margin: 0;
+}
+
+.rvp-foot-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rvp-foot-list a {
+    font-size: 1.2em;
+    color: var(--white) !important;
+    font-family: var(--font2);
+    margin: 0 5px;
+    transition-duration: 0.5s;
+}
+
+.rvp-foot-list a:hover {
+    color: var(--grey) !important;
+    transition-duration: 0.5s;
+}
+
+.rvp-foot-list li {
+    display: inline;
+}
+
+.rvp-copyright {
+    color: var(--white);
+    font-family: var(--font3);
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .rvp-foot-logo {
+        padding-left: 0.5em;
+    }
+
+    .rvp-foot-list {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .rvp-foot-logo {
+        padding-left: 0.2em;
+        margin: 24px 0;
+    }
+
+    .rvp-foot-list {
+        margin: 16px;
+    }
+
+    .rvp-copyright {
+        margin: 16px 16px;
+    }
+}
+
+/* -------------------------------- Footer -------------------------------------------------- */
+
+
+/* -------------------------------- common -------------------------------------------------- */
+
+.rvp-opaque {
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+@media (max-width: 992px) {
+    .rvp-what-we-do {
+        margin: 40px 0 !important;
+    }
+
+    .rvp-how-we-do-it {
+        padding: 40px 16px;
+    }
+
+    .rvp-who-we-are {
+        padding: 40px 0px;
+    }
+
+    .rvp-why-is-it-worth {
+        padding: 40px 16px !important;
+    }
+
+    .rvp-p {
+        font-size: 1rem;
+    }
+}
