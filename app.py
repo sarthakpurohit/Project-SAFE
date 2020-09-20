@@ -53,8 +53,7 @@ def predict():
     plotting(plate, plate)
 
     text = pytesseract.image_to_string(plate, lang='eng')
-    #print(text)
-
+    
     if request.method=='POST':
         return render_template('result.html', prediction=text)
 
